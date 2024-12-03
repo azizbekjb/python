@@ -1,0 +1,25 @@
+#   While yordamida lug'atni to'ldirish
+print("Do'stlaringiz yoshini saqlaymiz.")
+dostlar = {}
+ishora = True
+while ishora:
+    ism = input("Do'stingiz ismini kiring: ")
+    yosh = input(f"{ism.title()}ning yoshini kiriting: ")
+    dostlar[ism] = int(yosh) #ism kalit, yosh qiymat
+    javob = input("Yana ma'lumot qo'shasizmi(ha/yo'q) ")
+    if javob == "yo'q":
+        ishora = False
+print("Do'stlaringiz haqida ma'lumotlar!")
+for ism, yosh in dostlar.items():
+    print(f"{ism.title()} {yosh} yoshda")
+#Natija:
+    # Do'stlaringiz yoshini saqlaymiz.
+    # Do'stingiz ismini kiring: Azizbek
+    # Azizbekning yoshini kiriting: 18
+    # Yana ma'lumot qo'shasizmi(ha/yo'q) ha
+    # Do'stingiz ismini kiring: Sardor
+    # Sardorning yoshini kiriting: 19
+    # Yana ma'lumot qo'shasizmi(ha/yo'q) yo'q
+    # Do'stlaringiz haqida ma'lumotlar!
+    # Azizbek 18 yoshda
+    # Sardor 19 yoshda
