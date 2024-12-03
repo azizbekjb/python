@@ -13,6 +13,9 @@ while True:
     else:
         break
 print("Ro'yxat tuzildi")
+print("Do'stlar ro'yxati: ")
+for ism in ismlar:
+    print(ism.title(),end=' ')
 #Natija:
     # Yaqin do'stlaringiz ro'yxatini tuzamiz.
     # 1 - do'stingiz ismini kiriting: Azizbek
@@ -20,3 +23,5 @@ print("Ro'yxat tuzildi")
     # 2 - do'stingiz ismini kiriting: Sardor
     # Yana ism qo'shasizmi(ha/yo'q)yo'q
     # Ro'yxat tuzildi
+    # Do'stlar ro'yxati: 
+    # Azizbek Sardor 
