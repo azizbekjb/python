@@ -1,4 +1,4 @@
-#Amaliyot 6.2.1
+#Amaliyot 6.2.2
 e_bozor_mahsulotlar= {}
 ishora = True
 
