@@ -7,11 +7,13 @@ def bahola(ismlar):
         baholar[ism] = baho
     return baholar
 talabalar = ['ali', 'vali', 'hasan', 'husan']
-baholar = bahola(talabalar)
+baholar = bahola(talabalar[:])
+print(f"Asl ro'yxat o'zgarmadi: {talabalar}")
 print(baholar)
 #Natija:
     # Husanning bahosini kiriting: 5
     # Hasanning bahosini kiriting: 4
     # Valining bahosini kiriting: 4
     # Alining bahosini kiriting: 3
+    # Asl ro'yxat o'zgarmadi: ['ali', 'vali', 'hasan', 'husan']
     # {'husan': '5', 'hasan': '4', 'vali': '4', 'ali': '3'}
