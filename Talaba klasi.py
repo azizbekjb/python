@@ -34,10 +34,16 @@ class Talaba:
     def get_age(self, yil):
         """Talabaning yoshini qaytardi"""
         return yil - self.t_yil
+def see_methods(klass):
+    return [method for method in dir(klass) if method.startswith('__') is False]
+print("Kerakli metodlar")
+print(see_methods(Talaba))
 print("Klass metodlari")
 for metod in dir(Talaba):
     print(metod)
 #Natija:
+    # Kerakli metodlar
+    # ['get_age', 'get_fullname', 'get_info', 'get_lastname', 'get_name', 'set_bosqich', 'update_bosqich']
     # Klass metodlari
     # __class__
     # __delattr__
