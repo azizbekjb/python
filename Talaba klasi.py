@@ -36,12 +36,16 @@ class Talaba:
         return yil - self.t_yil
 def see_methods(klass):
     return [method for method in dir(klass) if method.startswith('__') is False]
+talaba1 = Talaba('Azizbek', 'Jabborov', 2006)
+#Obyektning metodlarini lug'at ko'rishda cho etish
+print(talaba1.__dict__)
 print("Kerakli metodlar")
 print(see_methods(Talaba))
 print("Klass metodlari")
 for metod in dir(Talaba):
     print(metod)
 #Natija:
+    #{'ism': 'Azizbek', 'familiya': 'Jabborov', 't_yil': 2006, 'bosqich': 1}
     # Kerakli metodlar
     # ['get_age', 'get_fullname', 'get_info', 'get_lastname', 'get_name', 'set_bosqich', 'update_bosqich']
     # Klass metodlari
