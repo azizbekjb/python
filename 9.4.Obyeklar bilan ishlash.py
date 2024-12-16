@@ -1,4 +1,4 @@
-#9.4.Obyeklar bilan ishlash
+#9.4.Obyektlar bilan ishlash
 #Classlar yaratishni boshlash
 class Talaba:
     '''Talaba nomli sinf yaratish'''
